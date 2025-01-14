@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  let x=2;
+
+  $("#btn2").click(function(){
+    if(x==6)
+    x=1;
+
+    $("img").attr("src", "images/"+ x +".jpg");
+    x++;
+  });
+
+ 
+});
+</script>
+</head>
+<body>
+
+<img src="images/1.jpg" alt="jQuery" width="100" height="140"><br><br>
+
+<button id="btn1">previous</button>
+<button id="btn2">next</button>
+
+</body>
+</html>
